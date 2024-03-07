@@ -147,6 +147,7 @@ ul {
 
 
 .hero-card {
+    width: 100%;
     display: flex;
     padding-top: 2rem;
     flex-direction: column;
@@ -156,7 +157,6 @@ ul {
     
 }
 .card {
-    
     width: 80%;
     /*debug*/
     height: 300px;
@@ -172,7 +172,7 @@ ul {
 @media screen and (min-width:768px) {
    
     .container{
-        width: 95%;
+        width: 100%;
           
     }
 
@@ -383,5 +383,53 @@ ul {
     .benefits .card {
         width:30%;
     }
+}
+
+/*****************************************************************
+******************************************************************
+*****************************************************************/
+
+/*About Us Mobile*/
+
+.about-us {
+    width: 100%;
+    background-color: var(--white-font);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    
+}
+
+.about-us-text,
+.about-us-img {
+    width: 80%;
+    /*debug*/
+    height: 500px;
+    border: 1px dashed;
+}
+
+
+
+
+/******************************************************************
+*****************************************************************/
+
+/*About Us Tablet*/
+
+@media screen and (min-width:768px) {
+    .about-us {
+        margin: auto;
+        width: 90%;
+    }
+    .about-us-text {
+        width: 50%;
+    }
+    
+    .about-us-img {
+        width:30%
+    }
+    
 }
 
