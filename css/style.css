@@ -13,5 +13,53 @@ body {
     font-style: normal;
 }
 
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --color-blue:rgb(0 132 253);
+    --white-font: white; 
+}
+
+/*****************************************************
+*****************************************************/
+
+/*Utility*/
+.display-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
 /******************************************************
 ******************************************************/
+/*COMMON*/
+
+/*Layout*/
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    
+}
+
+.header {
+    background-color:var(--color-blue);
+    height: 60px;
+}
+
+#header-logo,
+.fa-bars {
+    color: var(--white-font);
+    font-size: 2rem;
+    line-height:60px ;
+}
+
+.list-cont {
+    display: none;
+}
