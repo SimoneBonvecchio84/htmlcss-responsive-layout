@@ -218,7 +218,7 @@ ul {
     /*debug*/
     height: 800px;
     background-color:rgb(151 146 228); 
-    border: 1px solid;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +284,7 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    border: 1px solid;
+    
     padding-top: 2rem;
     padding-bottom: 3rem;
     gap: 2rem;
@@ -322,4 +322,66 @@ ul {
 }
 
 /****************************************************************
+*****************************************************************
 ****************************************************************/
+
+/*Benefits Mobile*/
+.cont-benefits {
+    width: 100%;
+    background-color: var(--backgruoun-viol);
+    display: flex;
+    justify-content: center;
+}
+.benefits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom:3rem ;
+    gap: 2rem;
+}
+
+.benefits-title {
+    width: 70%;
+    /*bebug*/
+    height: 200px;
+    border: 1px dashed;
+    background-color: var(--white-font);
+}
+
+.benefits .card {
+    background-color: var(--white-font);
+}
+
+/***************************************************************
+***************************************************************/
+
+/*Benefits Tablet*/
+
+@media screen and (min-width:768px) {
+    .benefits {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefits-title {
+        width: 100%;
+    }
+
+    .benefits .card {
+        width: 47%;
+    }
+}
+
+/*****************************************************************
+*****************************************************************/
+
+/*Benefits Desktop*/
+
+@media screen and (min-width:992px) {
+    .benefits .card {
+        width:30%;
+    }
+}
+
