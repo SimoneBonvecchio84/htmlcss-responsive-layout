@@ -29,7 +29,7 @@ ul {
     --color-blue:rgb(0 132 253);
     --white-font: white; 
     --backgroun-col:rgb(181 221 255);
-    --backgruoun-viol:
+    --backgruoun-viol:rgb(151 146 228);
 }
 
 /*****************************************************
@@ -277,3 +277,49 @@ ul {
 *****************************************************************
 ****************************************************************/
 
+/*Testimonial Mobile*/
+
+.testimonial {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+}
+
+.testimonial-text {
+    width: 70%;
+    /*debug*/
+    height: 300px;
+    border: 1px dashed;
+    
+}
+
+.testimonial .card {
+    background-color:var(--backgruoun-viol);
+}
+
+
+/****************************************************************
+******************************************************************/
+
+
+/*Testimonial Tablet*/
+
+@media screen and (min-width:768px) {
+    
+    .testimonial-text {
+        width: 70%;
+    }
+
+    .testimonial .card {
+        width: 70%;
+    }
+
+}
+
+/****************************************************************
+****************************************************************/
