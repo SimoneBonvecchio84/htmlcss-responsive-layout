@@ -31,7 +31,11 @@ ul {
     --white-font: white; 
     --backgroun-col:rgb(181 221 255);
     --backgruoun-viol:rgb(151 146 228);
+    --color-par:rgb(92 112 130);
+    --par-font-size: .8rem;
+    
 }
+
 
 /*****************************************************
 *****************************************************/
@@ -92,6 +96,7 @@ ul {
 
 
 
+
 /*****************************************************
 *****************************************************/
 
@@ -142,6 +147,13 @@ ul {
         color: var(--white-font);
     }
 
+    .get-btn {
+        background-color: var(--white-font);
+        color: black;
+        border-radius: 30px;
+        padding: .3rem;
+    }
+
     
 }  
 
@@ -166,9 +178,74 @@ ul {
 .card {
     width: 80%;
     /*debug*/
-    height: 300px;
+    min-height: 300px;
     border-radius: 10px;
     background-color: var(--backgroun-col);
+}
+
+.text-con {
+    text-align: left;
+    padding: 2rem 2rem 0;
+}
+
+.text-con h3 {
+    padding-bottom: 1.5rem;
+    color: var(--color-blue);
+}
+
+.par-cont {
+    color: var(--color-par);
+    font-size: var(--par-font-size);
+}
+
+.btn-apple {
+    width: 70%;
+    margin-top: 2.5rem;
+    background-color: var(--color-blue);
+    padding:  .5rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.btn-apple * {
+    color: white;
+}
+
+.btn-apple a {
+    font-size: .9rem;
+    margin-left: .7rem;
+    font-weight: 900;
+    
+}
+
+.hero-img {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.cont-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.fa-file-code,
+.fa-compass-drafting,
+.fa-laptop-code,
+.fa-bullhorn {
+    font-size: 3.5rem;
+    color: var(--color-blue);
+}
+
+.cont-card h3 {
+    padding-top: 1.5rem;
+    color:var(--color-blue) ;
+}
+
+.cont-card p {
+    padding-top: 1.5rem;
+    color:var(--color-par);
+    font-size: var(--par-font-size);
+    
 }
 
 /******************************************************
@@ -178,6 +255,9 @@ ul {
 
 @media screen and (min-width:768px) {
    
+    .header {
+        z-index: 9999;
+    } 
     .container{
         width: 100%;
           
@@ -187,7 +267,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: center;  
     }
 
     .card {
@@ -196,11 +276,16 @@ ul {
         
     }
 
+    
+
     .container .card:first-child {
        width: 50%;
     }
 
-
+    .hero-img {
+        width: 50%;
+    }
+    
 
 }
 
@@ -208,6 +293,31 @@ ul {
 *****************************************************/
 
 /*Main section-Hero Desktop*/
+
+@media screen and (min-width:992px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .text-con {
+        width: 60%;
+    }
+
+    .hero-img {
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        right: .8rem;
+    }
+
+    
+    
+}
+
+
+
 
 
 /******************************************************
