@@ -67,6 +67,9 @@ ul {
 .header {
     background-color:var(--color-blue);
     height: 60px;
+    width: 100%;
+    position: fixed;
+
 }
 
 #header-logo,
@@ -153,6 +156,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding-top: 5rem;
     padding-bottom:2rem;
     
 }
