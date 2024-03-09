@@ -81,7 +81,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-
+    z-index: 9999;
 }
 
 #header-logo,
@@ -196,6 +196,38 @@ ul {
     padding: .5rem;
     margin-top: 2rem;
     border-radius: 50px;
+}
+
+/*****************************************************************
+*****************************************************************
+****************************************************************/
+
+/*About Us*/
+
+.cont-about-us {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.img-cont-about-us {
+    width: 50%;
+}
+
+.btn-about-us {
+    margin-top: 1rem;
+}
+
+.about-us-cont-bot {
+    position: relative;
+    
+}
+
+.about {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    color: var(--backgruoun-viol);
+    
 }
 
 
