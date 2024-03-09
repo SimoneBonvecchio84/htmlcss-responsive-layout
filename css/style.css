@@ -341,6 +341,7 @@ ul {
     padding: .5rem;
     margin-top: 2rem;
     border-radius: 50px;
+    color: white;
 }
 
 .benefit-title h2 {
@@ -384,9 +385,7 @@ ul {
     padding-bottom: 4rem;
 }
 
-.img-cont-about-us {
-    width: 50%;
-}
+
 
 .btn-about-us {
     margin-top: 1rem;
@@ -400,9 +399,52 @@ ul {
 .about {
     position: absolute;
     top: 0;
-    left: 45%;
+    right: 60%;
     color: var(--backgruoun-viol);
     
+}
+
+.about-us-text h2 {
+    color: var(--backgruoun-viol);
+    font-size: var(--font-size-h2);
+    padding-bottom:2rem ;
+}
+
+.about-us-text p {
+    font-size: var(--par-font-size);
+    padding-bottom: 2rem;
+
+}
+
+.img-cont-about-us img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-cont-about-us .fa-quote-left {
+    font-size: 3rem;
+}
+
+.btn-about-us-cont p {
+    color: var(--backgruoun-viol);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-about-us {
+    background-color: var(--backgruoun-viol);
+    width: 50%;
+    text-align: center;
+    padding: .3rem;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-about-us a {
+    font-size: .9rem;
 }
 
 
@@ -415,6 +457,60 @@ ul {
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.cont-get-started * {
+    color: white;
+}
+
+.cont-get-started h5 {
+    font-weight: 50;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+.cont-get-started h3 {
+    font-size: 1.9rem;
+}
+
+.cont-get-started h2 {
+    font-size: 3rem;
+    color: rgb(253 193 95);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.get-started-con p {
+    font-size: var(--par-font-size);
+    padding-bottom: 2rem;
+}
+
+.btn-get-started {
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 30px;
+    
+}
+
+.btn-get-started a {
+    color: var(--backgruoun-viol);
+    font-weight: 900;
+}
+
+.list-started {
+    margin: auto;
+    width: 70%;
+    padding-top: 2rem;
+    font-size: var(--par-font-size);
+}
+
+.list-started a {
+    text-decoration: underline;
+}
+
+.fa-circle {
+    font-size: .3rem;
 }
 
 
@@ -432,4 +528,18 @@ ul {
 
 .cont-footer {
     text-align: center;
+    padding: 2rem;
+    color: white;
 }
+
+.cont-footer p {
+    font-size: var(--par-font-size);
+    padding-bottom: 2rem;
+    
+}
+
+.p-footer a {
+    text-decoration: underline;
+    color: rgb(141 136 209);
+}
+
