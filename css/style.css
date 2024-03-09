@@ -105,12 +105,26 @@ ul {
 .card-hero {
     margin-top: 2rem;
     width: 100%;
-    /*debug*/
-    min-height: 300px;
     background-color: var(--backgroun-col);
     border-radius: 30px;
-
+    text-align: center;
 }
+
+.card-hero:first-child  {
+    text-align:left;
+    padding-left: 1rem;
+}
+
+.img-card-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.img-card-hero img {
+    display:block;
+    width: 70%;
+}
+
 
 
 /*****************************************************************
