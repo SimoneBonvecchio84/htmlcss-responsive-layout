@@ -130,3 +130,35 @@
         width: 32%;
     }
 }
+
+/****************************************************************
+*****************************************************************
+****************************************************************/
+
+/*About Us Tablet*/
+
+@media screen and (min-width:768px) {
+    .cont-about-us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-text {
+        width: 60%;
+    }
+
+    .about-us-cont-bot {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .btn-about-us-cont {
+        width: 50%;
+    }
+    .about {
+        left: 95%;
+    }
+}
+
