@@ -18,7 +18,7 @@ img {
 }
 
 a {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -27,13 +27,13 @@ ul {
 }
 
 :root {
-    --color-blue:rgb(0 132 253);
-    --white-font: white; 
-    --backgroun-col:rgb(181 221 255);
-    --backgruoun-viol:rgb(151 146 228);
-    --color-par:rgb(92 112 130);
+    --color-blue: rgb(0 132 253);
+    --white-font: white;
+    --backgroun-col: rgb(181 221 255);
+    --backgruoun-viol: rgb(151 146 228);
+    --color-par: rgb(92 112 130);
     --par-font-size: .8rem;
-    
+
 }
 
 
@@ -43,6 +43,10 @@ ul {
 /*Utility*/
 .display-flex {
     display: flex;
+}
+
+.row {
+    flex-direction: row;
 }
 
 .column {
@@ -64,13 +68,14 @@ ul {
 
 /*Layout*/
 .container {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     padding: 0 1rem;
-    
+
 }
 
 .header {
-    background-color:var(--color-blue);
+    background-color: var(--color-blue);
     height: 60px;
     width: 100%;
     position: fixed;
@@ -83,7 +88,7 @@ ul {
 .fa-bars {
     color: var(--white-font);
     font-size: 2rem;
-    line-height:60px ;
+    line-height: 60px;
 }
 
 .list-cont {
@@ -91,543 +96,74 @@ ul {
 }
 
 
-/*Section-hero*/
-
-
-
-
-
-/*****************************************************
-*****************************************************/
-
-/*Tablet-responsive*/
-/*Header*/
-
-@media screen and (min-width:768px) {
-    .container {
-        width: 95%;
-        margin: 0 auto;
-    }
-}
-
-
-/******************************************************
-******************************************************/
-
-/*Desktop-responsive*/
-/*Header*/
-
-@media screen and (min-width:992px) {
-    .container {
-        width: 70%;
-        
-    }
-
-    .fa-bars {
-        display: none;
-    }
-
-    .header-menu {
-        width: 50%;
-    }
-
-    .list-cont {
-        display:block; 
-          
-    }
-
-    .ul-nav-list {
-        display: flex;
-        justify-content: end;
-        gap: 15px;
-        line-height: 60px;    
-    }
-
-    .ul-nav-list li {
-        color: var(--white-font);
-    }
-
-    .get-btn {
-        background-color: var(--white-font);
-        color: black;
-        border-radius: 30px;
-        padding: .3rem;
-    }
-
-    
-}  
-
-/*****************************************************
-******************************************************
-*****************************************************/
-
-/*Main section-Hero Mobile*/
-
-
+/*Section-hero-mobile*/
 .hero-card {
-    width: 100%;
-    display: flex;
-    padding-top: 2rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 5rem;
-    padding-bottom:2rem;
-    
+    padding-top: 6rem;
+    padding-bottom: 3rem;
 }
-.card {
-    width: 80%;
+
+.card-hero {
+    margin-top: 2rem;
+    width: 100%;
     /*debug*/
     min-height: 300px;
-    border-radius: 10px;
     background-color: var(--backgroun-col);
-}
-
-.text-con {
-    text-align: left;
-    padding: 2rem 2rem 0;
-}
-
-.text-con h3 {
-    padding-bottom: 1.5rem;
-    color: var(--color-blue);
-}
-
-.par-cont {
-    color: var(--color-par);
-    font-size: var(--par-font-size);
-}
-
-.btn-apple {
-    width: 70%;
-    margin-top: 2.5rem;
-    background-color: var(--color-blue);
-    padding:  .5rem;
-    text-align: center;
     border-radius: 30px;
-}
-
-.btn-apple * {
-    color: white;
-}
-
-.btn-apple a {
-    font-size: .9rem;
-    margin-left: .7rem;
-    font-weight: 900;
-    
-}
-
-.hero-img {
-    display: flex;
-    padding-top: 2rem;
-}
-
-.cont-card {
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.fa-file-code,
-.fa-compass-drafting,
-.fa-laptop-code,
-.fa-bullhorn {
-    font-size: 3.5rem;
-    color: var(--color-blue);
-}
-
-.cont-card h3 {
-    padding-top: 1.5rem;
-    color:var(--color-blue) ;
-}
-
-.cont-card p {
-    padding-top: 1.5rem;
-    color:var(--color-par);
-    font-size: var(--par-font-size);
-    
-}
-
-/******************************************************
-******************************************************/
-
-/*Main section-Hero Tablet*/
-
-@media screen and (min-width:768px) {
-   
-    .header {
-        z-index: 9999;
-    } 
-    .container{
-        width: 100%;
-          
-    }
-
-    .hero-card {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;  
-    }
-
-    .card {
-        
-        width:calc(100% / 4 - 10px);
-        
-    }
-
-    
-
-    .container .card:first-child {
-       width: 50%;
-    }
-
-    .hero-img {
-        width: 50%;
-    }
-    
 
 }
 
-/*****************************************************
-*****************************************************/
 
-/*Main section-Hero Desktop*/
+/*****************************************************************
+*****************************************************************/
 
-@media screen and (min-width:992px) {
-    .card {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .text-con {
-        width: 60%;
-    }
-
-    .hero-img {
-        width: 40%;
-        position: absolute;
-        bottom: 0;
-        right: .8rem;
-    }
-
-    
-    
-}
-
-
-
-
-
-/******************************************************
-******************************************************/
-
-
-/******************************************************
-*******************************************************
-******************************************************/
-
-/*Strategic-plan-Mobile*/
+/*STRATEGIC-PLAN*/
 
 .strategic-plan {
-    width: 100%;
-    /*debug*/
-    height: 800px;
-    background-color:rgb(151 146 228); 
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3rem;
+    background-color: var(--backgruoun-viol);
+    padding: 3rem;
+       
 }
 
-.cont-plan-img {
-    width: 100%;
-    /*debug*/
-    height: 600px;
-    border: 1px dashed white;
-    
-}
-
-.strategic-plan .card {
-    /*debug*/
-    height: 600px;
-    background-color: var(--white-font);
-}
-
-/***********************************************************
-************************************************************/
-
-/*Stategic-plan Tablet*/
-
-@media screen and (min-width:768px) {
-    .strategic-plan .card {
-        width:70% ;
-    }
-    
-}
-
-/************************************************************
-************************************************************/
-
-/*Stategic-plan Desktop*/
-
-@media screen and (min-width:992px) {
-    .strategic-plan {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .cont-plan-img {
-        width: 45%;
-    }
-
-    .strategic-plan .card {
-        width: 25%;
-    }
+.strat-cont-img-bot {
+    background-color: white;
     
 }
 
 /****************************************************************
-*****************************************************************
-****************************************************************/
+*****************************************************************/
 
-/*Testimonial Mobile*/
-
+/*Testimonial*/
 .testimonial {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    gap: 2rem;
+    background-color: white;
+    padding-top: 3rem;
 }
 
-.testimonial-text {
-    width: 70%;
-    /*debug*/
-    height: 300px;
-    border: 1px dashed;
-    
+.testimonial-title {
+    text-align: center;
 }
 
-.testimonial .card {
-    background-color:var(--backgruoun-viol);
-}
-
-
-/****************************************************************
-******************************************************************/
-
-
-/*Testimonial Tablet*/
-
-@media screen and (min-width:768px) {
-    
-    .testimonial-text {
-        width: 70%;
-    }
-
-    .testimonial .card {
-        width: 70%;
-    }
-
-}
-
-/****************************************************************
-*****************************************************************
-****************************************************************/
-
-/*Benefits Mobile*/
-.cont-benefits {
+.card-testimonial {
+    margin-top: 2rem;
     width: 100%;
     background-color: var(--backgruoun-viol);
+    border-radius: 30px;
     display: flex;
     justify-content: center;
-}
-.benefits {
-    width: 100%;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom:3rem ;
-    gap: 2rem;
 }
 
-.benefits-title {
-    width: 70%;
-    /*bebug*/
-    height: 200px;
-    border: 1px dashed;
-    background-color: var(--white-font);
-}
-
-.benefits .card {
-    background-color: var(--white-font);
-}
-
-/***************************************************************
-***************************************************************/
-
-/*Benefits Tablet*/
-
-@media screen and (min-width:768px) {
-    .benefits {
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .benefits-title {
-        width: 100%;
-    }
-
-    .benefits .card {
-        width: 47%;
-    }
-}
-
-/*****************************************************************
-*****************************************************************/
-
-/*Benefits Desktop*/
-
-@media screen and (min-width:992px) {
-    .benefits .card {
-        width:30%;
-    }
-}
-
-/*****************************************************************
-******************************************************************
-*****************************************************************/
-
-/*About Us Mobile*/
-
-.about-us {
-    width: 100%;
-    background-color: var(--white-font);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+.img-testimonial {
+    width: 120px;
+    
     
 }
 
-.about-us-text,
-.about-us-img {
-    width: 80%;
-    /*debug*/
-    height: 500px;
-    border: 1px dashed;
+.card-testimonial-text {
+    text-align: center;
 }
 
 
 
-
-/******************************************************************
-*****************************************************************/
-
-/*About Us Tablet*/
-
-@media screen and (min-width:768px) {
-    .about-us {
-        margin: auto;
-        width: 90%;
-    }
-    .about-us-text {
-        width: 50%;
-    }
-    
-    .about-us-img {
-        width:30%
-    }
-    
-}
-
-/******************************************************************
-******************************************************************
-*****************************************************************/
-
-/*Get-started Mobile*/
-
-.cont-get-started {
-    width: 100%;
-    /*debug*/
-    height: 500px;
-    background-color: var(--backgruoun-viol);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.get-started {
-    width: 90%;
-    /*debug*/
-    height:400px ;
-    background-color: var(--white-font);
-}
-
-/*****************************************************************
-*****************************************************************
-/*Get-started Tablet*/
-
-
-
-
-/*****************************************************************
-*****************************************************************/
-/*Get-started Desktop*/
-
-@media screen and (min-width:992px) {
-    .get-started {
-        width: 50%;
-    }
-    
-}
-
-/****************************************************************
-*****************************************************************
-****************************************************************/
-
-/* Footer Mobile*/
-
-.footer {
-    width: 100%;
-    background-color: black;
-    /*bebug*/
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-text {
-    width: 90%;
-    /*debug*/
-    height:150px ;
-    background-color: var(--white-font); 
-}
-
-/****************************************************************
-****************************************************************/
-
-/* Footer tablet*/
-
-/****************************************************************
-****************************************************************/
-
-/* Footer desktop*/
-@media screen and (min-width:992px) {
-    .footer-text {
-        width: 50%;
-    }
-}
 
 
 
