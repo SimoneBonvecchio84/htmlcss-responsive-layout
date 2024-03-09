@@ -1,0 +1,104 @@
+/*Desktop-responsive*/
+/*Header*/
+@media screen and (min-width:992px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .list-cont {
+        display: flex;
+    }
+
+    .ul-nav-list {
+        display: flex;
+        line-height: 60px;
+        color: white;
+        gap: 10px;
+    }
+
+    .get-btn {
+        color: black;
+        background-color: white;
+        padding: .5rem;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+
+/*****************************************************
+******************************************************
+*****************************************************/
+
+/*Main section-Hero Mobile*/
+
+/*****************************************************
+*****************************************************/
+
+/*Tablet-responsive*/
+/*Hero-tablet*/
+
+@media screen and (min-width:768px) {
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-hero {
+        width: calc(100% / 3 - 10px);
+    } 
+
+    .card-hero:first-child {
+        width: 66%;
+    }
+
+}
+/******************************************************
+******************************************************/
+
+/*strategic-plan tablet*/
+
+@media screen and (min-width:768px) {
+    .cont-plan {
+        display: flex;
+        justify-content: center;
+    }
+
+    .strat-cont-img-top {
+        width: 38%;
+    }
+    .strat-cont-img-bot {
+        width: 30%;
+        
+    }
+}
+
+/*******************************************************************
+************************************************************/
+
+/*Testimonial Tablet*/
+
+@media screen and (min-width:768px) {
+    .card-testimonial {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content:left;
+    }
+
+    .card-testimonial-text {
+        width: 60%;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .img-testimonial {
+        margin-left: 2rem;
+    }
+
+}
