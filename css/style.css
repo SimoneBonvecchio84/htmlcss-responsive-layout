@@ -169,6 +169,7 @@ ul {
     border-radius: 30px;
     margin-top: 2rem;
     cursor: pointer;
+    letter-spacing: 3px;
 }
 
 .fa-file-code,
